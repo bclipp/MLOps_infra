@@ -19,13 +19,13 @@ resource "databricks_cluster" "mlops_tiny" {
     max_workers = 2
   }
   aws_attributes {
-        first_on_demand = 1,
-        availability = "SPOT_WITH_FALLBACK",
-        zone_id = "us-west-2b",
-        instance_profile_arn = "arn:aws:iam::112437402463:instance-profile/databricks_instance_role_s3",
-        spot_bid_price_percent = 100,
-        ebs_volume_type = "GENERAL_PURPOSE_SSD",
-        ebs_volume_count = 3,
+        first_on_demand = 1
+        availability = "SPOT_WITH_FALLBACK"
+        zone_id = "us-west-2b"
+        instance_profile_arn = "arn:aws:iam::112437402463:instance-profile/databricks_instance_role_s3"
+        spot_bid_price_percent = 100
+        ebs_volume_type = "GENERAL_PURPOSE_SSD"
+        ebs_volume_count = 3
         ebs_volume_size = 100
     }
 }
