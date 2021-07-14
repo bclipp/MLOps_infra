@@ -1,6 +1,3 @@
-# https://registry.terraform.io/providers/databrickslabs/databricks/latest/docs
-# https://registry.terraform.io/providers/databrickslabs/databricks/latest/docs/resources/cluster
-
 terraform {
   required_providers {
     databricks = {
