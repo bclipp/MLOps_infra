@@ -7,11 +7,11 @@ terraform {
   }
 }
 
-variable "host" {
+variable "TF_VAR_HOST" {
   type = string
 }
 
-variable "token" {
+variable "TF_VAR_TOKEN" {
   type = string
 }
 
