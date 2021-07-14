@@ -7,18 +7,18 @@ terraform {
   }
 }
 
-variable "TF_VAR_HOST" {
+variable "HOST" {
   type = string
 }
 
-variable "TF_VAR_TOKEN" {
+variable "TOKEN" {
   type = string
 }
 
 
 provider "databricks" {
-   host  = var.TF_VAR_HOST
-  token =  var.TF_VAR_TOKEN
+   host  = var.HOST
+  token =  var.TOKEN
 }
 
 
