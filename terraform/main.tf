@@ -17,8 +17,8 @@ variable "TF_VAR_TOKEN" {
 
 
 provider "databricks" {
-   host  = var.host
-  token =  var.token
+   host  = var.TF_VAR_HOST
+  token =  var.TF_VAR_TOKEN
 }
 
 
