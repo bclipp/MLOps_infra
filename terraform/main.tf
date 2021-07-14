@@ -7,8 +7,20 @@ terraform {
   }
 }
 
-provider "databricks" {
+variable "host" {
+  type = string
 }
+
+variable "token" {
+  type = string
+}
+
+
+provider "databricks" {
+   host  = var.host
+  token =  var.token
+}
+
 
 
 data "databricks_spark_version" "latest_lts" {
