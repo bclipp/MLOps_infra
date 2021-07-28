@@ -27,7 +27,7 @@ data "databricks_spark_version" "latest_lts" {
 }
 
 resource "databricks_cluster" "tiny" {
-  cluster_name = "mlops_tiny"
+  cluster_name = "tiny"
   spark_version = data.databricks_spark_version.latest_lts.id
   node_type_id = "m4.large"
   driver_node_type_id = "m4.large"
@@ -49,7 +49,7 @@ resource "databricks_cluster" "tiny" {
 }
 
 resource "databricks_cluster" "ml_tiny" {
-  cluster_name = "mlops_tiny"
+  cluster_name = "ml_tiny"
   spark_version = "8.4.x-cpu-ml-scala2.12"
   node_type_id = "m4.large"
   driver_node_type_id = "m4.large"
